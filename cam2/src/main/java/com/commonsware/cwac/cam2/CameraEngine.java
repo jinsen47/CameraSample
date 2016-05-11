@@ -140,7 +140,19 @@ abstract public class CameraEngine {
   }
 
   public static class OrientationChangedEvent {
+      private int orientation;
 
+      public OrientationChangedEvent(int orientation) {
+          this.orientation = orientation;
+      }
+
+      public int getOrientation() {
+          return orientation;
+      }
+
+      public void setOrientation(int orientation) {
+          this.orientation = orientation;
+      }
   }
 
   public static class SmoothZoomCompletedEvent {

@@ -54,7 +54,7 @@ public class OrientationPlugin implements CameraPlugin {
         if (lastOrientation!=orientation) {
           EventBus
             .getDefault()
-            .post(new CameraEngine.OrientationChangedEvent());
+            .post(new CameraEngine.OrientationChangedEvent(orientation));
         }
 
         lastOrientation=orientation;

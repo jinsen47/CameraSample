@@ -19,8 +19,14 @@
     android:required="false"/>
 
   <application>
-    <activity android:name="CameraActivity" android:screenOrientation="portrait"/>
-    <activity android:name="VideoRecorderActivity" android:screenOrientation="portrait"/>
+    <activity
+        android:name="CameraActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|screenSize|keyboardHidden"/>
+    <activity
+        android:name="VideoRecorderActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|screenSize|keyboardHidden"/>
   </application>
 
 </manifest>
